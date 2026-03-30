@@ -3,7 +3,7 @@ use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
 
 -- Interfaz
-entity mux is
+entity mul is
   port (
     D : in std_logic_vector(7 downto 0); -- Entradas D0 a D7
     sel : in std_logic_vector(2 downto 0); -- Selectores S0 S1 S2
@@ -11,10 +11,10 @@ entity mux is
     Y  : out std_logic; -- salida
     W  : out std_logic  -- salida complementaria
   );
-end entity mux;
+end entity mul;
 
 -- Arquitectura
-architecture beh of mux is
+architecture beh of mul is
   signal temp : std_logic;
 begin
 

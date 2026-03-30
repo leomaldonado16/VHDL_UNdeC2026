@@ -2,13 +2,13 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
 
-entity mux_tb is
-end entity mux_tb;
+entity mul_tb is
+end entity mul_tb;
 
-architecture test_mux of mux_tb is
+architecture test_mul of mul_tb is
 
 	-- Declaración del componente
-	component mux
+	component mul
 	port(
 		D   : in std_logic_vector(7 downto 0);
 		sel : in std_logic_vector(2 downto 0);
@@ -28,7 +28,7 @@ architecture test_mux of mux_tb is
 begin
 
 	-- Instanciación
-	mux_1 : mux
+	mux_1 : mul
 	port map(
 		D   => t_D,
 		sel => t_sel,
@@ -92,4 +92,4 @@ begin
 		wait;
 	end process;
 
-end architecture test_mux;
+end architecture test_mul;
