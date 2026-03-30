@@ -28,7 +28,7 @@ architecture test_mul of mul_tb is
 begin
 
 	-- Instanciación
-	mux_1 : mul
+	mul_1 : mul
 	port map(
 		D   => t_D,
 		sel => t_sel,
