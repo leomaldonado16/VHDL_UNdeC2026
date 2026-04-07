@@ -33,7 +33,7 @@ begin
 process
 begin
     clk1Hz_tb <= '0';
-    wait for 1 ms;
+     wait for 1 ms;
     clk1Hz_tb <= '1';
     wait for 1 ms;
 end process;
