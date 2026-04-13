@@ -35,3 +35,6 @@ begin
 
     clk1Hz <= temp;
 end rtl;
+
+
+
